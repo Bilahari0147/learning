@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import {EducationComponent } from './education/education.component';
+import { Success } from './alert/success.component';
+import { Warning } from './alert/warning.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EducationComponent
+    EducationComponent,
+    Success,
+    Warning
   ],
   imports: [
     BrowserModule,
