@@ -5,5 +5,6 @@
 <input type="text" class="form-control" [(ngModel)]="educationName">
 <!-- {{educationName }} -->
 <p *ngIf="educationadded; else noEducation">Education Added,Name is {{educationName}}</p>
+<p *ngFor="let ed of education">{{ed}}</p>
 <ng-template #noEducation>No Education Added</ng-template>
 <p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{verified: educationStatus==='verified'}">{{educationName}} is {{educationStatus}}</p>

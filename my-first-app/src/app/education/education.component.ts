@@ -21,7 +21,8 @@ export class EducationComponent{
 
     allowNewEducation=false;
     educationStatus='not verified';
-    educationName='Btech';
+    education=['SSC','Intermediate'];
+    educationName='';
     educationadded=false;
     constructor(){
         setTimeout(() => {
@@ -33,6 +34,7 @@ export class EducationComponent{
 
     onAddEducation(){
         this.educationadded=true;
+        this.education.push(this.educationName);
         this.educationStatus='Education Added! Name is:'+this.educationName;
     }
     onUpdateEducationName(){
